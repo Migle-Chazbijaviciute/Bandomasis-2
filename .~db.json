@@ -1,19 +1,5 @@
 {
-  "toy": [
-    {
-      "id": "1",
-      "title": "Teddy Bear",
-      "price": {
-        "currency": "$",
-        "amount": 25
-      },
-      "ageRestrictions": null,
-      "discount": {
-        "type": "percentage",
-        "amount": 15
-      },
-      "imgSrc": "https://m.media-amazon.com/images/I/61DWaMHr8HL._AC_SL1000_.jpg"
-    },
+  "toys": [
     {
       "id": "2",
       "title": "Car",
