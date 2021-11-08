@@ -9,20 +9,20 @@ class ToysCardComponent {
     let { id, title, price, ageRestriction, discount, imgSrc } = this.props.data;
     const element = document.createElement('div');
     element.innerHTML = `
-    <div class"col-sm-4 col-lg-6">
-    <div class="card mb-5" style="width: 350px;">
-    <button class="btn btn-sm btn-danger delete">✕</button>
-    <img src="${imgSrc}" class="card-img-top">
+    <div class="border shadow">
+    <button class="btn btn-sm btn-danger delete float-end">✕</button>
+    <div class="h-100">
     <div class="card-body">
-      <h5 class="card-title">${title}</h5>
+      <h3 class="card-title">${title}</h3>
     </div>
-    <ul class="list-group list-group-flush">
+    <img src="${imgSrc}" class="card-img-top">
+    <ul class="list-group">
       <li class="list-group-item text-muted">Price: ${price.amount} ${price.currency}</li>
-      <li class="list-group-item"><span id='restrict'></span></li>
       <li class="list-group-item">Discount: ${discount.amount} ${discount.type}</li>
     </ul>
+</div>
   </div>
-  </div>
+  
     `
     const deleteBtn = element.querySelector('.delete');
     // debugger;

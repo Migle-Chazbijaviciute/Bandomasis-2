@@ -46,8 +46,10 @@ class ToysGridComponent {
   render = () => {
     const { loading } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif"></div>';
+      this.htmlElement.className = ' '
+      this.htmlElement.innerHTML = '<div class="d-flex justify-content-center align-items-center"><img src="assets/loading.gif"></div>';
     } else {
+      this.htmlElement.className = "row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center"
       this.htmlElement.innerHTML = '';
       this.state.toys.forEach(toys => {
         const newToy = new ToysCardComponent({
