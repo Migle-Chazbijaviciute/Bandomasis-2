@@ -1,0 +1,100 @@
+{
+  "toy": [
+    {
+      "id": "1",
+      "title": "Teddy Bear",
+      "price": {
+        "currency": "$",
+        "amount": 25
+      },
+      "ageRestrictions": {
+        "from": null
+      },
+      "discount": {
+        "type": "percentage",
+        "amount": 15
+      },
+      "imgSrc": "https://m.media-amazon.com/images/I/61DWaMHr8HL._AC_SL1000_.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Car",
+      "price": {
+        "currency": "€",
+        "amount": 10
+      },
+      "ageRestrictions": {
+        "from": 5
+      },
+      "discount": {
+        "type": "toFixed",
+        "amount": 7
+      },
+      "imgSrc": "https://m.media-amazon.com/images/I/71FxY0M36YL._AC_SX425_.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Doll",
+      "price": {
+        "currency": "€",
+        "amount": 50
+      },
+      "ageRestrictions": {
+        "from": null
+      },
+      "discount": {
+        "type": "amount",
+        "amount": 5.5
+      },
+      "imgSrc": "https://www.friars.co.uk/images/rag-doll-toy-p770-5107_zoom.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Barbie",
+      "price": {
+        "currency": "$",
+        "amount": 45
+      },
+      "ageRestrictions": {
+        "from": 10
+      },
+      "discount": {
+        "type": "percentage",
+        "amount": 10
+      },
+      "imgSrc": "https://images.mattel.com/scene7/GTJ76_01?$oslarge$&wid=412&hei=412&wid=1600&hei=1600"
+    },
+    {
+      "id": "5",
+      "title": "Lego",
+      "price": {
+        "currency": "$",
+        "amount": 150
+      },
+      "ageRestrictions": {
+        "from": 12
+      },
+      "discount": {
+        "type": "percentage",
+        "amount": 20
+      },
+      "imgSrc": "https://www.smartworld.it/wp-content/uploads/2021/02/lego-ideas-van-gogh-cover.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Unicorn",
+      "price": {
+        "currency": "€",
+        "amount": 60
+      },
+      "ageRestrictions": {
+        "from": null
+      },
+      "discount": {
+        "type": "toFixed",
+        "amount": 30
+      },
+      "imgSrc": "https://image.made-in-china.com/44f3j00lWyEvTOUbIbC/Hot-Sale-Custom-Stuffed-LED-Light-Unicorn-Toys.jpg"
+    }
+  ]
+}
