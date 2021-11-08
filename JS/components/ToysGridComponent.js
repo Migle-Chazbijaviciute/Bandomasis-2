@@ -20,6 +20,23 @@ class ToysGridComponent {
     );
   }
 
+  deleteToyById = (id) => {
+    this.state.loading = true;
+    this.render();
+    API.deleteToy(() => {
+      id,
+        API.getToys(
+          (toys) => {
+            this.state.toys = toys;
+            this.state.loading = false;
+            this.render();
+          },
+          (err) => console.log(err)
+        ),
+        (error) => console.log(error)
+    });
+  }
+
   init = () => {
     this.fetchToys();
     this.htmlElement = document.createElement('div');
