@@ -23,18 +23,18 @@ class ToysGridComponent {
   deleteToyById = (id) => {
     this.state.loading = true;
     this.render();
-    API.deleteToy(() => {
-      id,
-        API.getToys(
-          (toys) => {
-            this.state.toys = toys;
-            this.state.loading = false;
-            this.render();
-          },
-          (err) => console.log(err)
-        ),
-        (error) => console.log(error)
-    });
+    API.deleteToy(() =>
+      API.getToys(
+        (toys) => {
+          this.state.toys = toys;
+          this.state.loading = false;
+          this.render();
+        },
+        (err) => console.log(err)
+      ),
+      (error) => console.log(error),
+      id
+    );
   }
 
   init = () => {
@@ -52,6 +52,7 @@ class ToysGridComponent {
       this.state.toys.forEach(toys => {
         const newToy = new ToysCardComponent({
           data: toys,
+          onDelete: this.deleteToyById,
         });
         this.htmlElement.appendChild(newToy.htmlElement);
       });

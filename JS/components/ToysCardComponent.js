@@ -9,7 +9,9 @@ class ToysCardComponent {
     let { id, title, price, ageRestriction, discount, imgSrc } = this.props.data;
     const element = document.createElement('div');
     element.innerHTML = `
-    <div class="card mb-5" style="width: 250px;">
+    <div class"col-sm-4 col-lg-6">
+    <div class="card mb-5" style="width: 350px;">
+    <button class="btn btn-sm btn-danger delete">✕</button>
     <img src="${imgSrc}" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title">${title}</h5>
@@ -20,7 +22,11 @@ class ToysCardComponent {
       <li class="list-group-item">Discount: ${discount.amount} ${discount.type}</li>
     </ul>
   </div>
+  </div>
     `
+    const deleteBtn = element.querySelector('.delete');
+    // debugger;
+    deleteBtn.addEventListener('click', () => this.props.onDelete(id));
     return element;
   }
 
