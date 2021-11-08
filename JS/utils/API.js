@@ -10,7 +10,7 @@ class API {
 
   static deleteToy = (id, resolve, reject) => {
     fetch(`${serverUrl}/toys/${id}`, { method: 'DELETE' })
-      .then(data => data.json())
+      .then(result => result.json())
       .then(resolve)
       .catch(reject)
   }
