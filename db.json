@@ -71,7 +71,7 @@
         "from": 12
       },
       "discount": {
-        "type": "percentage",
+        "type": "toFixed",
         "amount": 20
       },
       "imgSrc": "https://www.smartworld.it/wp-content/uploads/2021/02/lego-ideas-van-gogh-cover.jpg"
@@ -85,7 +85,7 @@
       },
       "ageRestrictions": null,
       "discount": {
-        "type": "toFixed",
+        "type": "percentage",
         "amount": 30
       },
       "imgSrc": "https://image.made-in-china.com/44f3j00lWyEvTOUbIbC/Hot-Sale-Custom-Stuffed-LED-Light-Unicorn-Toys.jpg"
